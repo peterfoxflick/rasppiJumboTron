@@ -18,7 +18,7 @@ This project is to set up a raspbery pi to continually display a slideshow on st
 - Add the following line `@/usr/bin/chromium-browser --incognito --start-maximized --kiosk http://*yoururlhere*` and replace `*yourUrlhere*` with your url. 
 
 ### Reboot at Midnight
-- While the slideshow is editable and you wont need to change the link, inorder for it to apear on the Pi we need to reboot. We can do this by opening terminal and typing $`crontab -e` and add `@midnight /sbin/shutdown -r now`. This will cause the Raspberry Pi to restart at midnight. 
+- While the slideshow is editable and you wont need to change the link, inorder for it to apear on the Pi we need to reboot. We can do this by opening terminal and typing `$crontab -e` and add `@midnight /sbin/shutdown -r now`. This will cause the Raspberry Pi to restart at midnight. 
 
 ### Notes
 - If you need to exit the presentation, spress Alt and Spacebar at the same time. 
