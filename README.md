@@ -23,10 +23,12 @@ This project is to set up a raspbery pi to continually display a slideshow on st
 
 ### Update Every Hour
 - To have the pi refresh the tab were going to add to the crontab. First well need to create a script. In documents create a new file named *refresh.sh*. Fill it with this code:
-`export DISPLAY=":0"
+```
+export DISPLAY=":0"
 WID=$(xdotool search --onlyvisible --class chromium|head -1)
 xdotool windowactivate ${WID}
-xdotool key ctrl+F5`
+xdotool key ctrl+F5
+```
 - To get it to work we will need to install xdotool. From command line type `sudo apt-get install xdotool`
 - Add permsion to the file by `chmod +x /path/to/yourscript.sh`
 - Now go to the command line and type `crontab -e` and add `@hourly /home/pi/Documents/refresh.sh'
