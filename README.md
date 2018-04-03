@@ -16,6 +16,7 @@ This project is to set up a raspbery pi to continually display a slideshow on st
 - Assuming that you already have Raspbian installed and running. If not follow [this tutorial](https://www.raspberrypi.org/documentation/installation/installing-images/).
 - Navigate to `.config/lxsession/LXDE-pi/autostart`
 - Add the following line `@/usr/bin/chromium-browser --incognito --start-maximized --kiosk http://*yoururlhere*` and replace `*yourUrlhere*` with your url. 
+- Comment out the line `@xscreensaver -no-splash` in my experience this dosn't do anything...
 
 ### Reboot at Midnight
 - While the slideshow is editable and you wont need to change the link, inorder for it to apear on the Pi we need to reboot. We can do this by opening terminal and typing `$crontab -e` and add `@midnight /sbin/shutdown -r now`. This will cause the Raspberry Pi to restart at midnight. 
