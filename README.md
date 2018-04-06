@@ -41,3 +41,7 @@ xdotool key ctrl+F5
 Adding hourly refreshing https://www.raspberrypi.org/forums/viewtopic.php?t=52613
 xdotool permission http://theembeddedlab.com/tutorials/simulate-keyboard-mouse-events-xdotool-raspberry-pi/
 Running .sh files https://askubuntu.com/questions/38661/how-do-i-run-sh-files
+
+### Future
+Get the raspberry pi to auto turn on the tv: 
+https://www.howtogeek.com/207186/how-to-enable-hdmi-cec-on-your-tv-and-why-you-should/
